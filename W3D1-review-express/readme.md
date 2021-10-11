@@ -26,14 +26,14 @@ Competencies and Tools :
 6. touch connection.js setup.js seeding.js songController.js songModel.js index.js song.js app.js
 
 <br> **DATABASE** <br>
-7. edit => connection
-8. setup.js / seeding.js => create table => 1 : M (FK)
+<br>7. edit => connection
+<br>8. setup.js / seeding.js => create table => 1 : M (FK)
     => 1 => M (nested callback => pool.query)
-9. pastikan di DB
+<br>9. pastikan di DB
 
 <br>**SERVER**<br>
-10. R0: buat class Model
-11. set app.js => tanpa routes
-12. set routes => index.js - module.exports
+<br>10. R0: buat class Model
+<br>11. set app.js => tanpa routes
+<br>12. set routes => index.js - module.exports
 
-13... lanjutkan
+<br>13... lanjutkan
