@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Song</h1>
+    <form method="POST" action="/songs/<%=dataSong.id%>/edit">
+        <label for="">Title</label><br>
+        <input name="title" type="text" value="<%=dataSong.title%>"><br>
+        <label for="">Band Name</label><br>
+        <input name="bandName" type="text" value="<%=dataSong.bandName%>"><br>
+        <label for="">Duration</label><br>
+        <input name="duration" type="number" value="<%=dataSong.duration%>"><br>
+        <label for="">Label</label><br>
+        <select name="LabelId" id="">
+            <% labels.forEach(el => { %>
+                <% if (dataSong.LabelId == el.id) {%> 
+                    <option selected value="<%=el.id%>"><%= el.name %> </option>
+                <% }  else { %>
+                    <option  value="<%=el.id%>"><%= el.name %> </option>
+                <% } %>
+            <% }) %>   
+        </select><br>
+        <label for="">createDate</label><br>
+        <input name="createdDate" type="date" value="<%=dataSong.createdDate%>"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
