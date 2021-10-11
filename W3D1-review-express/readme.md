@@ -24,12 +24,14 @@ Competencies and Tools :
 4. .gitignore => node_modules => (-10)
 5. mkdir config controllers models views
 6. touch connection.js setup.js seeding.js songController.js songModel.js index.js song.js app.js
-**DATABASE**
+
+<br> **DATABASE**
 7. edit => connection
 8. setup.js / seeding.js => create table => 1 : M (FK)
     => 1 => M (nested callback => pool.query)
 9. pastikan di DB
-**SERVER**
+
+<br>**SERVER**
 10. R0: buat class Model
 11. set app.js => tanpa routes
 12. set routes => index.js - module.exports
