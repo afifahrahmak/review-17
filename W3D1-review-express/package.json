@@ -1,0 +1,25 @@
+{
+  "name": "song-label",
+  "version": "1.0.0",
+  "description": "Merupakan challnege yang dinilai 💯 ```txt Terbagi 3 Deadline : - Part 1 W3D2 09.00 WIB - Part 2 W3D3 18.00 WIB ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmt-17-quimper-fox/song-label.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmt-17-quimper-fox/song-label/issues"
+  },
+  "homepage": "https://github.com/rmt-17-quimper-fox/song-label#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
