@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/labels">label</a> | <a href="/songs"> song</a>
+    <h1> Song List </h1>
+    <a href="/songs/add"> add </a>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Band Name</th>
+            <th>Duration</th>
+            <th>Genre</th>
+            <th>Total Vote</th>
+            <th>Action</th>
+        </tr>
+        <% songs.forEach(el => { %> 
+            <tr>
+                <td><%= el.title %> </td>
+                <td><%= el.bandName %> </td>
+                <td><%= el.duration %> </td>
+                <td><%= el.genre %> </td>
+                <td><%= el.totalVote %> </td>
+                <td>
+                    <a href="/songs/<%=el.id%>">read</a> |
+                    <a href="/songs/<%=el.id%>/edit">edit</a> |
+                    <a href="/songs/<%=el.id%>/delete">delete</a>
+                </td>
+            </tr>
+        <% }) %> 
+    </table>
+</body>
+</html>
