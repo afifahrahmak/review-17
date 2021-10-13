@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Movie</h1>
+    <form action="/movies/edit/<%=movie.id%>" method="post">
+        <label for="">name</label><br>
+        <input type="text" name="name" value="<%=movie.name%>"><br>
+        <label for="">released_year</label><br>
+        <input type="number" name="released_year" value="<%=movie.released_year%>"><br>
+        <label for="">Genre</label><br>
+        <select name="genre" id="">
+            <% ['comedy', 'drama', 'horor', 'animasi', 'religious', 'thriller'].forEach(el => { %>
+                <% if (movie.genre == el)  {%>
+                    <option selected value="<%=el%>"><%=el%></option>
+                <%} else { %>
+                    <option value="<%=el%>"><%=el%></option>
+                <%}%>
+            <%}); %> 
+        </select><br>
+        <label for="">Prod House</label><br>
+        <select name="ProductionHouseId" id="">
+            <% ph.forEach(el => { %>
+                <%if (movie.ProductionHouseId == el.id ) {%>
+                    <option selected value="<%=el.id%>"><%=el.name_prodHouse%></option>
+                <% } else { %>
+                    <option value="<%=el.id%>"><%=el.name_prodHouse%></option>
+                <% } %>  
+            <%}); %> 
+        </select><br>
+        <input type="submit" value="edit" id="">   
+    </form>
+</body>
+</html>

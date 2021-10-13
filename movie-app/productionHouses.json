@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name_prodHouse": "Walt Disney Studios",
+        "headquarters": "Burbank, California, United States"
+    },
+    {
+        "id": 2,
+        "name_prodHouse": "Pixar",
+        "headquarters": "Emeryville, California, United States"
+    },
+    {
+        "id": 3,
+        "name_prodHouse": "Warner Bros",
+        "headquarters": "Los Angeles, California, United States"
+    },
+    {
+        "id" : 4,
+        "name_prodHouse": "Universal Pictures",
+        "headquarters": "Universal City, California, United States"
+    },
+    {
+        "id" : 5,
+        "name_prodHouse": "Paramount Pictures",
+        "headquarters": "Los Angeles, California, United States"
+    }
+]
