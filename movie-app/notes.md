@@ -3,11 +3,17 @@
 (**OOP - MVC(EXPRESS) - PG - CALLBACK**)
 
 1. cd folder => npm init -y
-2. npm i pg express ejs 
-3. npm i -D nodemon
-4. .gitignore => node_modules => (-10)
-5. mkdir config controllers models views
-6. touch connection.js setup.js seeding.js controller.js model.js app.js home.ejs
+2. npm i pg express ejs sequelize
+3. npm i -D nodemon sequelize-cli
+4. sequelize init
+    => config : ngatur conf. database
+    => migrations :
+    => models : index.js
+    => seeders :
+5. edit config => development => username, pass, database, dialect
+5. .gitignore => node_modules => (-10)
+6. mkdir config controllers models views
+7. touch connection.js setup.js seeding.js controller.js model.js app.js home.ejs
 
 <br> **DATABASE** <br>
 <br>7. edit => connection.js (https://node-postgres.com/features/connecting)
