@@ -4,16 +4,26 @@
 
 1. cd folder => npm init -y
 2. npm i pg express ejs sequelize
-3. npm i -D nodemon sequelize-cli
+3. npm i -g nodemon sequelize-cli
 4. sequelize init
     => config : ngatur conf. database
-    => migrations :
-    => models : index.js
-    => seeders :
+    => migrations : ngebuat struktur DB => Table => setup.js
+    => models : index.js, bikin model server 
+    => seeders : seeding.js
 5. edit config => development => username, pass, database, dialect
 5. .gitignore => node_modules => (-10)
 6. mkdir config controllers models views
 7. touch connection.js setup.js seeding.js controller.js model.js app.js home.ejs
+
+
+**SEQUELIZE**
+1. sequelize db:create
+2. sequelize model:generate   --name   --attributes
+=> penamaan class Model Server => Singular => PascalCase
+
+
+
+
 
 <br> **DATABASE** <br>
 <br>7. edit => connection.js (https://node-postgres.com/features/connecting)
